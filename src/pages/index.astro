@@ -1,16 +1,58 @@
 ---
 
 ---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="/src/styles/global.css" />
+</head>
+<body>
+	<header class="hero">
+		<div class="hero-text">
+			<h1 class="hero-line hero-line-top">Utsumi's</h1>
+			<h1 class="hero-line hero-line-bottom">Portfolio</h1>
+		</div>
+	</header>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<p>　こんにちは！内海雄介(ウツミユウスケ)と申します。<br>
+			現在、建設会社にて社内IT担当としてヘルプデスクから開発やセキュリティ対策まで担当しています。</p>
+			<p>主に紙媒体やExcelでの業務などの課題を見つけ、自動化・システム化することが得意で、ユーザーの操作感をできるだけ変えずに既存の業務を効率化しています。</p>
+			<p>これまではPythonやGo、VBAなどで業務の自動化をしていましたが、今後はよりモダンなフロントエンド技術を学びつつ、開発力を磨いていきたいと考えています。</p>
+		</section>
+		<section>
+			<h2>Works</h2>
+			<ul class="card-grid">
+				<li class="card card-left">
+					<a href="/src/pages/PrimeScore.astro">
+						<h3>素数感スコアリング(個人開発)</h3>
+						<p>PrimeScoreは素数スコア化プログラムです。 
+							任意の整数範囲を指定して、範囲内の整数に対し素数っぽさのスコアを0.0〜3.0でスコアリングします。 </p>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<script>
+		window.addEventListener('scroll', () => {
+			const topLine = document.querySelector('.hero-line-top');
+			const bottomLine = document.querySelector('.hero-line-bottom');
+			const scrollY = window.scrollY;
+
+		if (scrollY > 200) {
+			topLine?.classList.add('center');
+			bottomLine?.classList.add('center');
+		} else {
+			topLine?.classList.remove('center');
+			bottomLine?.classList.remove('center');
+		}
+		});
+	</script>
+</body>
 </html>

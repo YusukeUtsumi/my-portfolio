@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7edd9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 8rem;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 8rem;
+}
+
+.hero-line {
+    font-weight: bold;
+    transition: all 0.5s ease, opacity 0.5s ease;
+    white-space: nowrap;
+    opacity: 0.8;
+    margin: -10rem 0;
+}
+
+.hero-line-top {
+    text-align: left;
+    transform: translateX(-40%);
+}
+
+.hero-line-bottom {
+    text-align: right;
+    transform: translateX(40%);
+}
+
+.hero-line.center {
+    text-align: center;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-left: 4px solid #5d0408;
+    padding-left: 0.5rem;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+a:hover {
+    color: #555;
+    border-bottom-color: #555;
+}
+
+.card-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    background: #fff9ef;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 55%;
+    margin-top: 1.2rem;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 左右に寄せるアレンジ */
+.card-left {
+    transform: translateX(-10%);
+}
+.card-right {
+    transform: translateX(10%);
+}
