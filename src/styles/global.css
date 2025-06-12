@@ -132,3 +132,57 @@ a:hover {
 .card-right {
     transform: translateX(10%);
 }
+
+@media (max-width: 600px) {
+    .hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 10rem;
+    }
+
+    .hero-text {
+    text-align: center;
+    font-size: 2.5rem;
+    }
+
+    .hero-line {
+    font-weight: bold;
+    transition: all 0.5s ease, opacity 0.5s ease;
+    white-space: nowrap;
+    opacity: 0.8;
+    margin: -4rem 0;
+    }
+
+    .hero-line-top {
+        text-align: left;
+        transform:translate(-40%);
+    }
+
+    .hero-line-bottom {
+        text-align: right;
+        transform: translateX(40%);
+    }
+
+    .hero-line.center {
+        text-align: center;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:active {
+        transform: scale(0.98);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+}
