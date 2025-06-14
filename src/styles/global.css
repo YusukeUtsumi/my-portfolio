@@ -175,13 +175,6 @@ a:hover {
         transform: translateX(40%);
     }
 
-    .hero-line.center {
-        text-align: center;
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 @media (max-width: 600px) {
     .card {
         transform: translateY(-2px);
@@ -206,4 +199,5 @@ a:hover {
         width: 65%;
         margin-top: 1.2rem;
     }
+}
 }
